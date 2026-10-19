@@ -33,7 +33,7 @@ function currentStreak() {
 
 // Progress bar and headline stats (always across the full log)
 function renderProgress() {
-  const rejections = REJECTIONS.filter(r => r.outcome === 'No').length;
+  const rejections = REJECTIONS.filter(r => r.outcome !== 'Yes').length;
   const yeses = REJECTIONS.length - rejections;
   const pct = Math.min(100, (rejections / GOAL) * 100);
 
@@ -77,7 +77,8 @@ function buildCategoryChips() {
 
 // Render a single ask
 function renderCard(entry, index) {
-  const isNo = entry.outcome === 'No';
+  const OUTCOMES = { No: ['no', 'Rejected'], Ghosted: ['ghosted', 'Ghosted'], Yes: ['yes', 'Surprise Yes'] };
+  const [cls, label] = OUTCOMES[entry.outcome] || OUTCOMES.No;
   return `
     <div class="blog-card fade-in">
       <div class="blog-card-accent" style="background: ${getGradient(index)}"></div>
@@ -88,7 +89,7 @@ function renderCard(entry, index) {
         </div>
         <h3>${entry.ask}</h3>
         <div class="blog-meta-row">
-          <span class="rj-outcome ${isNo ? 'no' : 'yes'}">${isNo ? 'Rejected' : 'Surprise Yes'}</span>
+          <span class="rj-outcome ${cls}">${label}</span>
         </div>
         ${entry.note ? `<p class="rj-note">${entry.note}</p>` : ''}
       </div>

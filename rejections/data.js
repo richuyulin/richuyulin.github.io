@@ -1,6 +1,7 @@
 // 1,000 Rejection Challenge log
-// Add one entry per ask. Only outcome "No" counts toward the 1,000 goal;
-// "Yes" entries are tracked as surprise wins.
+// Add one entry per ask. Outcome is "No", "Ghosted", or "Yes".
+// "No" and "Ghosted" both count toward the 1,000 goal (log a ghost after
+// ~2 weeks or one unanswered follow-up); "Yes" entries are surprise wins.
 //
 // Example:
 // {

@@ -1117,7 +1117,7 @@
       document.getElementById('job-stat-words').textContent = totalWords.toLocaleString();
     })();
     (function () {
-      const rejections = REJECTIONS.filter(r => r.outcome === 'No').length;
+      const rejections = REJECTIONS.filter(r => r.outcome !== 'Yes').length;
       document.getElementById('rj-stat-rejections').textContent = rejections.toLocaleString();
       document.getElementById('rj-stat-progress').textContent = Math.floor(rejections / GOAL * 100) + '%';
       document.getElementById('rj-stat-asks').textContent = REJECTIONS.length.toLocaleString();
