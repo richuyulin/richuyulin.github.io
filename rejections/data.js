@@ -33,7 +33,7 @@ const REJECTIONS = [
     id: 2,
     date: "Oct 19, 2026",
     dateISO: "2026-10-19",
-    ask: "Asked my manager for a recommendation letter before my last day in my marketing role",
+    ask: "Asked HR for a recommendation letter before my last day in my marketing role",
     category: "Career",
     outcome: "Pending",
     note: "Sent a summary of my responsibilities and key projects to make it easy to write."
