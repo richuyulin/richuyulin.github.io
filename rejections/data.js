@@ -29,4 +29,13 @@ const REJECTIONS = [
     outcome: "No",
     note: "The fee couldn't be waived, but they clarified it's only paid if I'm offered a place, offered to discuss a payment plan, and encouraged me to apply before the Nov 1 deadline."
   },
+  {
+    id: 2,
+    date: "Oct 19, 2026",
+    dateISO: "2026-10-19",
+    ask: "Asked my manager for a recommendation letter before my last day in my marketing role",
+    category: "Career",
+    outcome: "Pending",
+    note: "Sent a summary of my responsibilities and key projects to make it easy to write."
+  },
 ];
