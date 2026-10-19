@@ -795,6 +795,78 @@
       <h2 class="section-title">Work I've Done</h2>
 
       <div class="project-card">
+        <div class="project-accent" style="background: linear-gradient(180deg, var(--pink), var(--peach))"></div>
+        <div class="project-body">
+
+          <div class="project-header">
+            <div class="project-title-group">
+              <span class="project-type">Personal Growth &middot; Progress Dashboard</span>
+              <h3>1,000 Rejection Challenge — Tracker Dashboard</h3>
+              <p class="project-meta">Habit Tracking &nbsp;&middot;&nbsp; October 2026 &ndash; Present</p>
+            </div>
+            <a href="rejections/" class="project-link-btn">
+              View Dashboard ↗
+            </a>
+          </div>
+
+          <p class="project-desc">
+            A personal challenge to get rejected 1,000 times — at work, in my career, and in everyday life —
+            to build resilience and confidence in asking. Every ask is logged with its date, category, and outcome,
+            and the dashboard turns the log into live progress tracking toward the 1,000 goal.
+          </p>
+
+          <div class="project-metrics">
+            <div class="proj-metric" style="--pm-color: var(--pink)">
+              <span class="proj-metric-val" id="rj-stat-rejections">—</span>
+              <span class="proj-metric-label">Rejections Logged</span>
+            </div>
+            <div class="proj-metric" style="--pm-color: var(--peach)">
+              <span class="proj-metric-val" id="rj-stat-progress">—</span>
+              <span class="proj-metric-label">Progress to 1,000</span>
+            </div>
+            <div class="proj-metric" style="--pm-color: var(--lavender)">
+              <span class="proj-metric-val" id="rj-stat-asks">—</span>
+              <span class="proj-metric-label">Asks Made</span>
+            </div>
+            <div class="proj-metric" style="--pm-color: var(--mint)">
+              <span class="proj-metric-val" id="rj-stat-yes">—</span>
+              <span class="proj-metric-label">Surprise Yeses</span>
+            </div>
+          </div>
+
+          <div class="project-analyses">
+            <div class="analysis-item">
+              <span class="analysis-dot" style="background: var(--pink)"></span>
+              <span>Animated progress bar with milestone markers at 250, 500, 750, and 1,000</span>
+            </div>
+            <div class="analysis-item">
+              <span class="analysis-dot" style="background: var(--peach)"></span>
+              <span>Daily streak and days-in counters calculated from the log</span>
+            </div>
+            <div class="analysis-item">
+              <span class="analysis-dot" style="background: var(--lavender)"></span>
+              <span>Filter by outcome and category, with live search across asks and notes</span>
+            </div>
+            <div class="analysis-item">
+              <span class="analysis-dot" style="background: var(--mint)"></span>
+              <span>Tracks surprise yeses alongside rejections</span>
+            </div>
+          </div>
+
+          <div class="project-footer">
+            <div class="tag-row">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML / CSS</span>
+              <span class="tag">Dashboard Design</span>
+              <span class="tag">Data Tracking</span>
+              <span class="tag">Personal Growth</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="project-card" style="margin-top: 24px;">
         <div class="project-accent" style="background: linear-gradient(180deg, var(--mint), var(--lavender))"></div>
         <div class="project-body">
 
@@ -1030,6 +1102,7 @@
   </footer>
 
   <script src="writing/data.js?v=20261019205136"></script>
+  <script src="rejections/data.js?v=20261019205136"></script>
   <script src="script.js?v=20261019205136"></script>
   <script>
     (function () {
@@ -1042,6 +1115,13 @@
       document.getElementById('proj-stat-companies').textContent = companies;
       document.getElementById('job-stat-articles').textContent = BLOGS.length;
       document.getElementById('job-stat-words').textContent = totalWords.toLocaleString();
+    })();
+    (function () {
+      const rejections = REJECTIONS.filter(r => r.outcome === 'No').length;
+      document.getElementById('rj-stat-rejections').textContent = rejections.toLocaleString();
+      document.getElementById('rj-stat-progress').textContent = Math.floor(rejections / GOAL * 100) + '%';
+      document.getElementById('rj-stat-asks').textContent = REJECTIONS.length.toLocaleString();
+      document.getElementById('rj-stat-yes').textContent = (REJECTIONS.length - rejections).toLocaleString();
     })();
   </script>
 </body>

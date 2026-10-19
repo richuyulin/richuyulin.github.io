@@ -1,0 +1,20 @@
+// 1,000 Rejection Challenge log
+// Add one entry per ask. Only outcome "No" counts toward the 1,000 goal;
+// "Yes" entries are tracked as surprise wins.
+//
+// Example:
+// {
+//   id: 1,
+//   date: "Oct 19, 2026",
+//   dateISO: "2026-10-19",
+//   ask: "Asked a coffee shop for a free refill on a large latte",
+//   category: "Everyday",
+//   outcome: "No",
+//   note: "Polite no, but they offered a discount next time"
+// },
+
+const GOAL = 1000;
+const CHALLENGE_START = "2026-10-19";
+
+const REJECTIONS = [
+];

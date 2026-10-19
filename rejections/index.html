@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1,000 Rejection Challenge — Yulin Chen</title>
+
+  <link rel="stylesheet" href="../style.css?v=20261019205136" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Rejection page overrides ── */
+    body { padding-top: 80px; }
+
+    .writing-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 0 24px;
+      transition: background var(--transition), box-shadow var(--transition);
+    }
+
+    .writing-nav.scrolled {
+      background: rgba(253,251,255,0.88);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 var(--border);
+    }
+
+    .writing-nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .writing-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
+      transition: color var(--transition), gap var(--transition);
+    }
+
+    .writing-back:hover { color: var(--text); gap: 10px; }
+
+    .writing-hero {
+      padding: 56px 0 40px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    .writing-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .writing-hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.2;
+      margin: 8px 0 12px;
+    }
+
+    .writing-hero p {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 680px;
+    }
+
+    .writing-main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .rj-stats { grid-template-columns: repeat(4, 1fr); }
+
+    /* Progress toward 1,000 */
+    .rj-progress {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 24px 28px;
+      margin-bottom: 32px;
+    }
+
+    .rj-progress-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .rj-progress-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+    }
+
+    .rj-progress-pct {
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .rj-bar {
+      height: 14px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .rj-bar-fill {
+      height: 100%;
+      width: 0;
+      background: linear-gradient(90deg, var(--lavender), var(--pink), var(--peach));
+      border-radius: 100px;
+      transition: width 0.8s ease;
+    }
+
+    .rj-milestones {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .rj-milestones span.hit { color: var(--text); font-weight: 600; }
+
+    /* Log cards */
+    .rj-outcome {
+      padding: 3px 10px;
+      border-radius: 100px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .rj-outcome.no  { background: var(--pink); }
+    .rj-outcome.yes { background: var(--mint); }
+
+    .rj-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    .rj-note {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .blog-empty {
+      text-align: center;
+      padding: 56px 24px;
+      color: var(--muted);
+      background: var(--surface);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius);
+    }
+
+    footer.writing-footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    footer.writing-footer a {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    footer.writing-footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 760px) {
+      .rj-stats { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="writing-nav" id="writing-nav">
+    <div class="writing-nav-inner">
+      <a href="../" class="writing-back">&larr; Back to Portfolio</a>
+      <a href="../" class="nav-logo">YC</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <div class="writing-hero">
+    <div class="writing-hero-inner">
+      <div class="section-label">Personal Challenge</div>
+      <h1>1,000 Rejection Challenge</h1>
+      <p>Building resilience one "no" at a time. Every ask is logged — at work, in my career, and in everyday life — until I've been rejected 1,000 times.</p>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <main class="writing-main">
+
+    <!-- Progress -->
+    <div class="rj-progress">
+      <div class="rj-progress-top">
+        <span class="rj-progress-title"><span id="prog-count">0</span> / <span id="prog-goal">1,000</span> rejections</span>
+        <span class="rj-progress-pct" id="prog-pct">0% complete</span>
+      </div>
+      <div class="rj-bar"><div class="rj-bar-fill" id="prog-fill"></div></div>
+      <div class="rj-milestones" id="prog-milestones"></div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="blog-stats rj-stats">
+      <div class="blog-stat" style="--bs-color: var(--lavender)">
+        <span class="blog-stat-val" id="stat-asks">—</span>
+        <span class="blog-stat-label">Asks Made</span>
+      </div>
+      <div class="blog-stat" style="--bs-color: var(--mint)">
+        <span class="blog-stat-val" id="stat-yes">—</span>
+        <span class="blog-stat-label">Surprise Yeses</span>
+      </div>
+      <div class="blog-stat" style="--bs-color: var(--peach)">
+        <span class="blog-stat-val" id="stat-streak">—</span>
+        <span class="blog-stat-label">Day Streak</span>
+      </div>
+      <div class="blog-stat" style="--bs-color: var(--pink)">
+        <span class="blog-stat-val" id="stat-days">—</span>
+        <span class="blog-stat-label">Days In</span>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="blog-controls">
+      <div class="blog-controls-row">
+        <div class="blog-search-wrap">
+          <span class="blog-search-icon">&#128269;</span>
+          <input type="text" id="rj-search" placeholder="Search asks and notes&hellip;" class="blog-search" />
+        </div>
+        <select id="rj-sort" class="blog-sort">
+          <option value="newest">Newest First</option>
+          <option value="oldest">Oldest First</option>
+        </select>
+      </div>
+      <div class="blog-filter-chips" id="rj-outcome-chips">
+        <button class="filter-chip active" data-outcome="all">All Asks</button>
+        <button class="filter-chip" data-outcome="No">Rejections</button>
+        <button class="filter-chip" data-outcome="Yes">Surprise Yeses</button>
+      </div>
+      <div class="blog-tag-chips" id="rj-category-chips"></div>
+    </div>
+
+    <!-- Log -->
+    <div id="rj-grid" class="blog-grid"></div>
+    <div id="rj-empty" class="blog-empty" style="display:none"></div>
+
+  </main>
+
+  <footer class="writing-footer">
+    <p>&copy; 2026 Yulin Chen &middot; <a href="../">Back to Portfolio</a></p>
+  </footer>
+  <script src="data.js?v=20261019205136"></script>
+  <script src="script.js?v=20261019205136"></script>
+
+</body>
+</html>
