@@ -1117,11 +1117,11 @@
       document.getElementById('job-stat-words').textContent = totalWords.toLocaleString();
     })();
     (function () {
-      const rejections = REJECTIONS.filter(r => r.outcome !== 'Yes').length;
+      const rejections = REJECTIONS.filter(r => r.outcome === 'No' || r.outcome === 'Ghosted').length;
       document.getElementById('rj-stat-rejections').textContent = rejections.toLocaleString();
       document.getElementById('rj-stat-progress').textContent = Math.floor(rejections / GOAL * 100) + '%';
       document.getElementById('rj-stat-asks').textContent = REJECTIONS.length.toLocaleString();
-      document.getElementById('rj-stat-yes').textContent = (REJECTIONS.length - rejections).toLocaleString();
+      document.getElementById('rj-stat-yes').textContent = REJECTIONS.filter(r => r.outcome === 'Yes').length.toLocaleString();
     })();
   </script>
 </body>

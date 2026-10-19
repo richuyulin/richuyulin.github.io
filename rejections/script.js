@@ -33,8 +33,8 @@ function currentStreak() {
 
 // Progress bar and headline stats (always across the full log)
 function renderProgress() {
-  const rejections = REJECTIONS.filter(r => r.outcome !== 'Yes').length;
-  const yeses = REJECTIONS.length - rejections;
+  const rejections = REJECTIONS.filter(r => r.outcome === 'No' || r.outcome === 'Ghosted').length;
+  const yeses = REJECTIONS.filter(r => r.outcome === 'Yes').length;
   const pct = Math.min(100, (rejections / GOAL) * 100);
 
   document.getElementById('prog-count').textContent = rejections.toLocaleString();
@@ -77,7 +77,7 @@ function buildCategoryChips() {
 
 // Render a single ask
 function renderCard(entry, index) {
-  const OUTCOMES = { No: ['no', 'Rejected'], Ghosted: ['ghosted', 'Ghosted'], Yes: ['yes', 'Surprise Yes'] };
+  const OUTCOMES = { No: ['no', 'Rejected'], Ghosted: ['ghosted', 'Ghosted'], Pending: ['pending', 'Pending'], Yes: ['yes', 'Surprise Yes'] };
   const [cls, label] = OUTCOMES[entry.outcome] || OUTCOMES.No;
   return `
     <div class="blog-card fade-in">

@@ -1,7 +1,9 @@
 // 1,000 Rejection Challenge log
-// Add one entry per ask. Outcome is "No", "Ghosted", or "Yes".
+// Add one entry per ask. Outcome is "No", "Ghosted", "Pending", or "Yes".
 // "No" and "Ghosted" both count toward the 1,000 goal (log a ghost after
 // ~2 weeks or one unanswered follow-up); "Yes" entries are surprise wins.
+// "Pending" means still waiting on an answer — it counts as an ask only,
+// and gets updated to another outcome once the answer comes in.
 //
 // Example:
 // {
