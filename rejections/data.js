@@ -3,7 +3,8 @@
 // "No" and "Ghosted" both count toward the 1,000 goal (log a ghost after
 // ~2 weeks or one unanswered follow-up); "Yes" entries are surprise wins.
 // "Pending" means still waiting on an answer — it counts as an ask only,
-// and gets updated to another outcome once the answer comes in.
+// and gets updated to another outcome once the answer comes in. A pending
+// ask with no update after GHOST_AFTER_DAYS is shown as "Ghosted" automatically.
 //
 // Example:
 // {
@@ -39,3 +40,17 @@ const REJECTIONS = [
     note: "Sent a summary of my responsibilities and key projects to make it easy to write."
   },
 ];
+
+// Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
+const GHOST_AFTER_DAYS = 14;
+(function () {
+  const now = new Date();
+  const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  REJECTIONS.forEach(r => {
+    const age = (today - Date.parse(r.dateISO + 'T00:00:00Z')) / 86400000;
+    if (r.outcome === 'Pending' && age >= GHOST_AFTER_DAYS) {
+      r.outcome = 'Ghosted';
+      r.autoGhosted = true;
+    }
+  });
+})();

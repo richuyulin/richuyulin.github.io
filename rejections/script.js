@@ -92,6 +92,7 @@ function renderCard(entry, index) {
           <span class="rj-outcome ${cls}">${label}</span>
         </div>
         ${entry.note ? `<p class="rj-note">${entry.note}</p>` : ''}
+        ${entry.autoGhosted ? `<p class="rj-note"><em>No reply after ${GHOST_AFTER_DAYS} days — automatically marked as ghosted.</em></p>` : ''}
       </div>
     </div>`;
 }
