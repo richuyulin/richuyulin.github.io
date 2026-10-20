@@ -66,6 +66,15 @@ const REJECTIONS = [
     outcome: "No",
     note: "Offered to write one for him in return. He politely passed, saying he didn't feel he was the best person to write it, and wished me well on my next chapter."
   },
+  {
+    id: 6,
+    date: "Oct 20, 2026",
+    dateISO: "2026-10-20",
+    ask: "Asked another colleague for a recommendation letter the day before my last day",
+    category: "Career",
+    outcome: "Yes",
+    note: "Right after my last no, I asked again. He said yes, asked me to draft it myself, and said HR would prepare the final letter."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
