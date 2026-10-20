@@ -39,6 +39,15 @@ const REJECTIONS = [
     outcome: "Yes",
     note: "Sent a summary of my responsibilities and key projects to make it easy to write. HR said yes the same day — the letter is coming by the end of October."
   },
+  {
+    id: 3,
+    date: "Oct 20, 2026",
+    dateISO: "2026-10-20",
+    ask: "Asked a Sephora employee to shade match me for foundation as a total makeup newbie",
+    category: "Everyday",
+    outcome: "Yes",
+    note: "They happily helped — turns out I'm a perfect match for Rare Beauty shade 9."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
