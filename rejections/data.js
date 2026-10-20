@@ -41,8 +41,8 @@ const REJECTIONS = [
   },
   {
     id: 3,
-    date: "Oct 20, 2026",
-    dateISO: "2026-10-20",
+    date: "Oct 19, 2026",
+    dateISO: "2026-10-19",
     ask: "Asked a Sephora employee to shade match me for foundation as a total makeup newbie",
     category: "Everyday",
     outcome: "Yes",
