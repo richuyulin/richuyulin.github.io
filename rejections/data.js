@@ -18,11 +18,20 @@
 // },
 
 const GOAL = 1000;
-const CHALLENGE_START = "2026-10-19";
+const CHALLENGE_START = "2026-10-18";
 
 const REJECTIONS = [
   {
     id: 1,
+    date: "Oct 18, 2026",
+    dateISO: "2026-10-18",
+    ask: "Asked a co-worker at my part-time Tim Hortons job to switch shifts with me",
+    category: "Work",
+    outcome: "Yes",
+    note: "A win-win: I got to go home 2 hours earlier, and he got the extra hours and pay he wanted."
+  },
+  {
+    id: 2,
     date: "Oct 19, 2026",
     dateISO: "2026-10-19",
     ask: "Asked StudyStream to waive the $2,000 fee for their AI Builders Programme",
@@ -31,7 +40,7 @@ const REJECTIONS = [
     note: "The fee couldn't be waived, but they clarified it's only paid if I'm offered a place, offered to discuss a payment plan, and encouraged me to apply before the Nov 1 deadline."
   },
   {
-    id: 2,
+    id: 3,
     date: "Oct 19, 2026",
     dateISO: "2026-10-19",
     ask: "Asked HR for a recommendation letter before my last day in my marketing role",
@@ -40,7 +49,7 @@ const REJECTIONS = [
     note: "Sent a summary of my responsibilities and key projects to make it easy to write. HR said yes the same day — the letter is coming by the end of October."
   },
   {
-    id: 3,
+    id: 4,
     date: "Oct 19, 2026",
     dateISO: "2026-10-19",
     ask: "Asked a Sephora employee to shade match me for foundation as a total makeup newbie",
