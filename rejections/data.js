@@ -63,8 +63,8 @@ const REJECTIONS = [
     dateISO: "2026-10-20",
     ask: "Asked a co-worker for a recommendation letter the day before my last day",
     category: "Career",
-    outcome: "Pending",
-    note: "Offered to write one for him in return, so he has it on hand whenever he needs it."
+    outcome: "No",
+    note: "Offered to write one for him in return. He politely passed, saying he didn't feel he was the best person to write it, and wished me well on my next chapter."
   },
 ];
 
