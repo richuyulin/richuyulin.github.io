@@ -101,9 +101,13 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline;
-      gap: 16px;
+      flex-wrap: wrap;
+      gap: 4px 16px;
       margin-bottom: 14px;
     }
+
+    .rj-progress-title,
+    .rj-progress-pct { white-space: nowrap; }
 
     .rj-progress-title {
       font-family: 'DM Serif Display', serif;
