@@ -2,7 +2,7 @@
 // Add one entry per ask. Outcome is "No", "Ghosted", "Pending", or "Yes".
 // "No" and "Ghosted" both count toward the 1,000 goal (log a ghost after
 // ~2 weeks or one unanswered follow-up); "Yes" entries are surprise wins.
-// "Pending" means still waiting on an answer â it counts as an ask only,
+// "Pending" means still waiting on an answer — it counts as an ask only,
 // and gets updated to another outcome once the answer comes in. A pending
 // ask with no update after GHOST_AFTER_DAYS is shown as "Ghosted" automatically.
 //
@@ -46,7 +46,7 @@ const REJECTIONS = [
     ask: "Asked HR for a recommendation letter before my last day in my marketing role",
     category: "Career",
     outcome: "Yes",
-    note: "Sent a summary of my responsibilities and key projects to make it easy to write. HR said yes the same day â the letter is coming by the end of October."
+    note: "Sent a summary of my responsibilities and key projects to make it easy to write. HR said yes the same day — the letter is coming by the end of October."
   },
   {
     id: 4,
@@ -55,7 +55,7 @@ const REJECTIONS = [
     ask: "Asked a Sephora employee to shade match me for foundation as a total makeup newbie",
     category: "Everyday",
     outcome: "Yes",
-    note: "They happily helped â turns out I'm a perfect match for Rare Beauty shade 9."
+    note: "They happily helped — turns out I'm a perfect match for Rare Beauty shade 9."
   },
   {
     id: 5,
