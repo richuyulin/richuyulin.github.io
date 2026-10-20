@@ -84,12 +84,13 @@ function renderCard(entry, index) {
       <div class="blog-card-accent" style="background: ${getGradient(index)}"></div>
       <div class="blog-card-body">
         <div class="blog-card-top">
-          <span class="rj-num">Ask #${entry.id} &middot; ${entry.category}</span>
+          <span class="rj-num">Ask #${entry.id}</span>
           <span class="blog-card-date">${entry.date}</span>
         </div>
         <h3>${entry.ask}</h3>
         <div class="blog-meta-row">
           <span class="rj-outcome ${cls}">${label}</span>
+          <span class="blog-badge">${entry.category}</span>
         </div>
         ${entry.note ? `<p class="rj-note">${entry.note}</p>` : ''}
         ${entry.autoGhosted ? `<p class="rj-note"><em>No reply after ${GHOST_AFTER_DAYS} days — automatically marked as ghosted.</em></p>` : ''}
