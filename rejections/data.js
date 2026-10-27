@@ -93,6 +93,15 @@ const REJECTIONS = [
     outcome: "Yes",
     note: "After my availability request went unanswered, I gave my shift supervisor notice that I can work 4:00 to 7:00 PM but am unavailable after that. She thanked me for the heads up and is asking the overnight person to start early to cover 7:00 to 10:00 PM."
   },
+  {
+    id: 9,
+    date: "Oct 26, 2026",
+    dateISO: "2026-10-26",
+    ask: "Asked a friend to hop on a voice call right away to talk through her interview and resume prep",
+    category: "Social",
+    outcome: "Yes",
+    note: "She'd just landed an interview and wanted my advice on updating her resume and preparing. Instead of going back and forth over text, I suggested a call — she said yes, right then."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
