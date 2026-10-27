@@ -75,6 +75,24 @@ const REJECTIONS = [
     outcome: "No",
     note: "Right after my last no, I asked again. Instead of writing one himself, he told me to draft my own and have HR prepare it — but I'd already secured HR's letter and was hoping for one from him."
   },
+  {
+    id: 7,
+    date: "Oct 24, 2026",
+    dateISO: "2026-10-24",
+    ask: "Asked my Tim Hortons manager to change my Saturday availability so my shift ends at 7:00 PM",
+    category: "Work",
+    outcome: "No",
+    note: "My new job has me waking up at 6:00 AM, and late Saturday shifts were making it hard to keep my sleep schedule. No reply — the next schedule went up with me on Saturday from 4:00 PM to 10:00 PM."
+  },
+  {
+    id: 8,
+    date: "Oct 25, 2026",
+    dateISO: "2026-10-25",
+    ask: "Asked my shift supervisor to cover the rest of my Saturday 4–10 PM shift after 7:00 PM",
+    category: "Work",
+    outcome: "Yes",
+    note: "After my availability request went unanswered, I gave my shift supervisor notice that I can work 4:00 to 7:00 PM but am unavailable after that. She thanked me for the heads up and is asking the overnight person to start early to cover 7:00 to 10:00 PM."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
