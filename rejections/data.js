@@ -138,6 +138,15 @@ const REJECTIONS = [
     outcome: "Yes",
     note: "I lost my dental insurance when I changed jobs, so I called to make sure the appointment was off the books. They confirmed my mom had already cancelled it earlier that day."
   },
+  {
+    id: 14,
+    date: "Nov 4, 2026",
+    dateISO: "2026-11-04",
+    ask: "Asked a few batch mates in my training group to join a WhatsApp group I created",
+    category: "Work",
+    outcome: "Yes",
+    note: "I set it up so we'd have a way to communicate if any of us is running late, and we can let the others and our trainer know. They said yes."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
