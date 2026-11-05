@@ -113,6 +113,15 @@ const REJECTIONS = [
   },
   {
     id: 11,
+    date: "Nov 3, 2026",
+    dateISO: "2026-11-03",
+    ask: "Asked my trainer to raise a ticket for a tech issue I was having with ADP",
+    category: "Work",
+    outcome: "Yes",
+    note: "She raised the ticket for me the next day."
+  },
+  {
+    id: 12,
     date: "Nov 4, 2026",
     dateISO: "2026-11-04",
     ask: "Called my dental office to confirm my Nov 14 appointment was cancelled",
