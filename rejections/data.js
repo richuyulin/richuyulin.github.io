@@ -113,6 +113,15 @@ const REJECTIONS = [
   },
   {
     id: 11,
+    date: "Oct 30, 2026",
+    dateISO: "2026-10-30",
+    ask: "Emailed my old boss to ask for the broken contact form on one of the company's websites to be fixed",
+    category: "Work",
+    outcome: "Pending",
+    note: "The contact page was showing a line of raw placeholder code where the form should be, so customers had no form to fill out."
+  },
+  {
+    id: 12,
     date: "Nov 3, 2026",
     dateISO: "2026-11-03",
     ask: "Asked my trainer to raise a ticket for a tech issue I was having with ADP",
@@ -121,7 +130,7 @@ const REJECTIONS = [
     note: "She raised the ticket for me the next day."
   },
   {
-    id: 12,
+    id: 13,
     date: "Nov 4, 2026",
     dateISO: "2026-11-04",
     ask: "Called my dental office to confirm my Nov 14 appointment was cancelled",
