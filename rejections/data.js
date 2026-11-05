@@ -45,8 +45,8 @@ const REJECTIONS = [
     dateISO: "2026-10-19",
     ask: "Asked HR for a recommendation letter before my last day in my marketing role",
     category: "Career",
-    outcome: "Pending",
-    note: "Sent a summary of my responsibilities and key projects to make it easy to write. HR said yes the same day and promised the letter by the end of October — still waiting on it."
+    outcome: "Yes",
+    note: "Sent a summary of my responsibilities and key projects to make it easy to write. HR said yes the same day and promised the letter by the end of October. It arrived on Nov 4 — and I was deeply disappointed with how poorly it was written. It only validated my employment and nothing else."
   },
   {
     id: 4,
