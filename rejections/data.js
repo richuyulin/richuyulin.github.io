@@ -18,11 +18,20 @@
 // },
 
 const GOAL = 1000;
-const CHALLENGE_START = "2026-10-18";
+const CHALLENGE_START = "2026-10-16";
 
 const REJECTIONS = [
   {
     id: 1,
+    date: "Oct 16, 2026",
+    dateISO: "2026-10-16",
+    ask: "Emailed my new employer's contact to ask which Toronto location I'd be training at before my first day",
+    category: "Career",
+    outcome: "Ghosted",
+    note: "I wanted to try the commute ahead of my Oct 23 start so I'd arrive on time. Never got a reply."
+  },
+  {
+    id: 2,
     date: "Oct 18, 2026",
     dateISO: "2026-10-18",
     ask: "Asked a co-worker at my part-time Tim Hortons job to switch shifts with me",
@@ -31,7 +40,7 @@ const REJECTIONS = [
     note: "A win-win: I got to go home 2 hours earlier, and he got the extra hours and pay he wanted."
   },
   {
-    id: 2,
+    id: 3,
     date: "Oct 19, 2026",
     dateISO: "2026-10-19",
     ask: "Asked StudyStream to waive the $2,000 fee for their AI Builders Programme",
@@ -40,7 +49,7 @@ const REJECTIONS = [
     note: "The fee couldn't be waived, but they clarified it's only paid if I'm offered a place, offered to discuss a payment plan, and encouraged me to apply before the Nov 1 deadline."
   },
   {
-    id: 3,
+    id: 4,
     date: "Oct 19, 2026",
     dateISO: "2026-10-19",
     ask: "Asked HR for a recommendation letter before my last day in my marketing role",
@@ -49,7 +58,7 @@ const REJECTIONS = [
     note: "Sent a summary of my responsibilities and key projects to make it easy to write. HR said yes the same day and promised the letter by the end of October. It arrived on Nov 4 — and I was deeply disappointed with how poorly it was written. It only validated my employment and nothing else."
   },
   {
-    id: 4,
+    id: 5,
     date: "Oct 19, 2026",
     dateISO: "2026-10-19",
     ask: "Asked a Sephora employee to shade match me for foundation as a total makeup newbie",
@@ -58,7 +67,7 @@ const REJECTIONS = [
     note: "They happily helped — turns out I'm a perfect match for Rare Beauty shade 9."
   },
   {
-    id: 5,
+    id: 6,
     date: "Oct 20, 2026",
     dateISO: "2026-10-20",
     ask: "Asked a co-worker for a recommendation letter the day before my last day",
@@ -67,7 +76,7 @@ const REJECTIONS = [
     note: "Offered to write one for him in return. He politely passed, saying he didn't feel he was the best person to write it, and wished me well on my next chapter."
   },
   {
-    id: 6,
+    id: 7,
     date: "Oct 20, 2026",
     dateISO: "2026-10-20",
     ask: "Asked my boss for a recommendation letter the day before my last day",
@@ -76,7 +85,7 @@ const REJECTIONS = [
     note: "Right after my last no, I asked again. Instead of writing one himself, he told me to draft my own and have HR prepare it — but I'd already secured HR's letter and was hoping for one from him."
   },
   {
-    id: 7,
+    id: 8,
     date: "Oct 24, 2026",
     dateISO: "2026-10-24",
     ask: "Asked my Tim Hortons manager to change my Saturday availability so my shift ends at 7:00 PM",
@@ -85,7 +94,7 @@ const REJECTIONS = [
     note: "My new job has me waking up at 6:00 AM, and late Saturday shifts were making it hard to keep my sleep schedule. No reply — the next schedule went up with me on Saturday from 4:00 PM to 10:00 PM."
   },
   {
-    id: 8,
+    id: 9,
     date: "Oct 25, 2026",
     dateISO: "2026-10-25",
     ask: "Asked my shift supervisor to cover the rest of my Saturday 4–10 PM shift after 7:00 PM",
@@ -94,13 +103,22 @@ const REJECTIONS = [
     note: "After my availability request went unanswered, I gave my shift supervisor notice that I can work 4:00 to 7:00 PM but am unavailable after that. She thanked me for the heads up and is asking the overnight person to start early to cover 7:00 to 10:00 PM."
   },
   {
-    id: 9,
+    id: 10,
     date: "Oct 26, 2026",
     dateISO: "2026-10-26",
     ask: "Asked a friend to hop on a voice call right away to talk through her interview and resume prep",
     category: "Social",
     outcome: "Yes",
     note: "She'd just landed an interview and wanted my advice on updating her resume and preparing. Instead of going back and forth over text, I suggested a call — she said yes, right then."
+  },
+  {
+    id: 11,
+    date: "Nov 4, 2026",
+    dateISO: "2026-11-04",
+    ask: "Called my dental office to confirm my Nov 14 appointment was cancelled",
+    category: "Everyday",
+    outcome: "Yes",
+    note: "I lost my dental insurance when I changed jobs, so I called to make sure the appointment was off the books. They confirmed my mom had already cancelled it earlier that day."
   },
 ];
 
