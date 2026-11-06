@@ -122,6 +122,15 @@ const REJECTIONS = [
   },
   {
     id: 12,
+    date: "Nov 2, 2026",
+    dateISO: "2026-11-02",
+    ask: "Emailed the hiring manager for my current job to confirm my pre-disclosed April vacation is approved",
+    category: "Work",
+    outcome: "Pending",
+    note: "I disclosed the vacation before I was hired, and asked whether there are any other steps I need to follow to have it approved."
+  },
+  {
+    id: 13,
     date: "Nov 3, 2026",
     dateISO: "2026-11-03",
     ask: "Asked my trainer to raise a ticket for a tech issue I was having with ADP",
@@ -130,7 +139,7 @@ const REJECTIONS = [
     note: "She raised the ticket for me the next day."
   },
   {
-    id: 13,
+    id: 14,
     date: "Nov 4, 2026",
     dateISO: "2026-11-04",
     ask: "Called my dental office to confirm my Nov 14 appointment was cancelled",
@@ -139,13 +148,22 @@ const REJECTIONS = [
     note: "I lost my dental insurance when I changed jobs, so I called to make sure the appointment was off the books. They confirmed my mom had already cancelled it earlier that day."
   },
   {
-    id: 14,
+    id: 15,
     date: "Nov 4, 2026",
     dateISO: "2026-11-04",
     ask: "Asked a few batch mates in my training group to join a WhatsApp group I created",
     category: "Work",
     outcome: "Yes",
     note: "I set it up so we'd have a way to communicate if any of us is running late, and we can let the others and our trainer know. They said yes."
+  },
+  {
+    id: 16,
+    date: "Nov 5, 2026",
+    dateISO: "2026-11-05",
+    ask: "Asked my dad to pick up my work laptop bag from the walk-in clinic",
+    category: "Social",
+    outcome: "Yes",
+    note: "I had to see a doctor. He said yes — and he also waited in the parking lot to pick me up!"
   },
 ];
 
