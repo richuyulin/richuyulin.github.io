@@ -174,6 +174,15 @@ const REJECTIONS = [
     outcome: "Yes",
     note: "She said yes — and wrote me a wonderful letter, now in my portfolio's recommendations."
   },
+  {
+    id: 18,
+    date: "Nov 9, 2026",
+    dateISO: "2026-11-09",
+    ask: "Asked the friend who referred me to my new job to do mock role-plays with me to prepare for my call certification",
+    category: "Work",
+    outcome: "Yes",
+    note: "He said yes and set it up for Tuesday evening — then reached out to his own friends to help me practice again on Wednesday evening."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
