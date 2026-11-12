@@ -183,6 +183,24 @@ const REJECTIONS = [
     outcome: "Yes",
     note: "He said yes and set it up for Tuesday evening — then reached out to his own friends to help me practice again on Wednesday evening."
   },
+  {
+    id: 19,
+    date: "Nov 9, 2026",
+    dateISO: "2026-11-09",
+    ask: "Emailed a former co-worker to congratulate him on his new job and ask him to have the company's new tech person fix a broken contact form",
+    category: "Work",
+    outcome: "Yes",
+    note: "A follow-up to my earlier email about the same broken contact form on one of the company's websites. He replied that he'd pass the message along — though the form is still broken for now."
+  },
+  {
+    id: 20,
+    date: "Nov 11, 2026",
+    dateISO: "2026-11-11",
+    ask: "Emailed a senior co-worker I'd shadowed to ask for feedback on my slide deck for my call certification",
+    category: "Work",
+    outcome: "Yes",
+    note: "She agreed and emailed me back really detailed feedback."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
