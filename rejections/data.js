@@ -201,6 +201,15 @@ const REJECTIONS = [
     outcome: "Yes",
     note: "She agreed and emailed me back really detailed feedback."
   },
+  {
+    id: 21,
+    date: "Nov 13, 2026",
+    dateISO: "2026-11-13",
+    ask: "Applied to become a BobaTalks mentor",
+    category: "Career",
+    outcome: "Pending",
+    note: "I want to help other students and young professionals who are starting their careers."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
