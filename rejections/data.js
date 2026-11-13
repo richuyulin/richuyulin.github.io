@@ -210,6 +210,15 @@ const REJECTIONS = [
     outcome: "Pending",
     note: "I want to help other students and young professionals who are starting their careers."
   },
+  {
+    id: 22,
+    date: "Nov 13, 2026",
+    dateISO: "2026-11-13",
+    ask: "Signed up for the Tim Hortons team Christmas party at Canada's Wonderland — on a Sunday I usually work",
+    category: "Work",
+    outcome: "Pending",
+    note: "The party is on Sunday, Dec 6, and the $2 donation per person goes to the Tim Hortons Youth Foundation and the Firehouse Public Safety Foundation. I usually work Sundays, so whether I can go depends on my manager approving the day off."
+  },
 ];
 
 // Auto-ghost: pending asks older than GHOST_AFTER_DAYS count as ghosted
